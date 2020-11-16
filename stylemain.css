@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #3AAFA9;
+}
+.flex-container-header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+nav ul{
+    margin: 7px 10px 0px 10px;
+    padding: 0;
+    overflow-x: hidden;
+    list-style-type: none;
+    background-color: transparent;
+}
+nav ul li a{
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: #17252A;
+    /*font-weight: bold;*/
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+nav ul li a:hover{
+    background-color: #17252A;
+    color: #FEFFFF;
+    border-radius: 10px;
+    transition: background-color 0.7s, color 0.3s;
+}
+nav li button{
+    padding: 10px 20px;
+    color: #FEFFFF;
+    background-color: #17252A;
+    margin-top: 13px;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+/* box-shadow: [horizontal offset][vertical offset][blur radius][spread radius]*/
+/* horizontal offset means for a positive value the shadow will be on right side
+and for a negative value it will be on the left side*/
+/* vertical offset means for a positive value the shadow will be on the bottom
+and for a negative value it will be slightly up*/
+nav li button:hover{
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.headline-container{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin: auto;
+    margin-top: 40px;
+    /*border: 3px solid #17252A;*/
+}
+.headline{
+    font-weight: 900;
+    font-size: 65px;
+    color: #17252A;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.para-below-headline{
+    font-family: 'Work Sans', sans-serif;
+    color: #17252A;
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 18px;
+}
+.btn-headline{
+    background-color: #389491;
+    color: #17252A;
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 15px;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-headline:hover{
+    color: #FEFFFF;
+    background-color: #296865;
+    transition: all 0.3s;
+}
+
+
