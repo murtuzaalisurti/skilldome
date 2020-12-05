@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillDome | Explore</title>
+    <link rel="stylesheet" href="./css/stylemain.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:Regular|Work+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="flex-container-header">
+                <a href="index.html">
+                    <img src="D:\Inkscape\g1136.png" alt="img" class="logo">
+                </a>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <!--<li><a href="#">About Us</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+                <li><button>SIGN UP</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="searchbox-container">
+        <input class="searchbox" type="search" placeholder="Search" name="search">
+    </div>
+    <div class="explore-section-1">
+        <h1 class="explore-text-1">
+            Most Popular
+        </h1>
+    </div>
+    <div class="explore-content">
+        <div class="content">
+            <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/YqQx75OPRa0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="content-para">Fundamentals Of Graphic Design</p>
+            <p class="content-description">You will learn the basics of Graphic Design and some useful techniques to implement them.</p>
+            <a href="pricing.html">Learn more</a>
+        </div>
+        <div class="content">
+            <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/mqAUCGNK0Sw" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="content-para">Video Editing: Complete Basics</p>
+            <p class="content-description">This a complete beginner course on how to edit your videos efficiently yet attractive way.</p>
+            <a href="pricing.html">Learn more</a>
+        </div>
+        <div class="content">
+            <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/ujxvy5NjeRQ" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="content-para">How To Learn Anything?</p>
+            <p class="content-description">In this course you will get to know the concept of 'how to learn' by Emmy Award winning Chris Do.</p>
+            <a href="pricing.html">Learn more</a>
+        </div>
+        <div class="content">
+            <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/xHvFHRPLvII" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="content-para">Shoot Like a Pro with a Phone</p>
+            <p class="content-description">You will discover some awesome mobile photography techniques and principles.</p>
+            <a href="pricing.html">Learn more</a>
+        </div>
+    </div>
+    <div class="explore-section-1">
+        <h1 class="explore-text-1">
+            All Courses
+        </h1>
+    </div>
+    <div class="explore-content">
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+    <div class="explore-content">
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+    <div class="explore-content">
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+    <div class="explore-content" id="more-content" style="display: none;">
+        <div class="content">
+            
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+    <div class="load-more-btn-container">
+        <button class="btn-headline load-more-btn-center" id="load">Load more..</button>
+    </div>
+    <!--<script src="./js/main.js"></script>-->
+    <!--<script src="./js/scroll.js"></script>-->
+    <script>
+        var loadbtn = document.getElementById("load");
+        loadbtn.addEventListener("click", function(){
+            var more = document.getElementById("more-content");
+            if(more.style.display === "none"){
+                more.style.display = "flex";
+                more.scrollIntoView({behavior:"smooth"});
+                loadbtn.innerText = "Load less..";
+            }
+            else{
+                more.style.display = "none";
+                loadbtn.innerText = "Load more..";
+            }
+            // document.getElementById("more-content").classList.add("show");
+        });
+    </script>
+</body>
+</html>

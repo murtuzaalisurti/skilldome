@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SkillDome</title>
+    <link rel="stylesheet" href="./css/stylemain.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:Regular|Work+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="flex-container-header">
+                <a href="index.html">
+                    <img src="D:\Inkscape\g1136.png" alt="img" class="logo">
+                </a>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <!--<li><a href="#">About Us</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+                <li><button>SIGN UP</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="explore-section-1">
+        <h1 class="pricing-headline">Contact Us</h1>
+    </div>
+    <div class="form-div">
+        <form action="pricing.html" method="POST" class="form-container">
+            <label for="name" id="name-label">*Full Name</label>
+            <input type="text" name="name" placeholder="Your Full Name..." id="name-input">
+            <label for="email" id="email-label">*Email</label>
+            <input type="email" name="email" placeholder="example@xyz.com" id="email-input">
+            <label for="message" id="message-label">*Message</label>
+            <textarea type="text" name="message" placeholder="Type Something..." id="message-input"></textarea>
+            <p id="required-field">*Required Fields</p>
+            <button id="form-submit-btn">Submit</button>
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/scroll.js"></script>
+    <!--<div>
+        <h1>Thank you for reaching out to us!</h1>
+        <h2>For more info, please contact</h2>
+        <a href="mailto:example@xyz.com">contact@skilldome.com</a>
+    </div>-->
+    <!--<script>
+        var submission = document.getElementById("successful-submission");
+        var submitbtn = document.getElementById("form-submit-btn");
+        submitbtn.addEventListener("click", function(){
+            submission.innerText = "Your response was submitted successfully!"; 
+        });
+    </script>-->
+</body>
+</html>
