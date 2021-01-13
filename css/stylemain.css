@@ -356,6 +356,14 @@ p.if-existing-account > a{
     flex-flow: row wrap;
     justify-content: space-between;
 }
+.explore-content-slide{
+    height: 400px;
+    /* background-color: #296865; */
+    margin: 0 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 .content{
     height: 300px;
     width: 210px;
@@ -416,7 +424,7 @@ p.if-existing-account > a{
     flex-flow: column wrap;
     /* align-items: center; */
 }
-.plans-pro{
+.plan-select{
     border: 3px solid #FEFFFF;
 }
 .plan-head{
@@ -440,6 +448,13 @@ p.if-existing-account > a{
     font-weight: 300;
     font-size: 18px;
     text-decoration: line-through;
+    align-self: center;
+}
+.plan-recommend{
+    color: #b9b9b9;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
     align-self: center;
 }
 .plan-cta-btn{
@@ -479,7 +494,10 @@ p.if-existing-account > a{
     color: #8b8b8b;
 }
 .plan-content-margin{
-    margin-top: 70px;
+    margin-top: 55px;
+}
+.plan-content-margin-premium{
+    margin-top: 67px;
 }
 .basic-plan-content-margin{
     margin-top: 92px;
@@ -569,7 +587,7 @@ div > a{
     border: 2px transparent;
     border-radius: 10px;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 30px;
     caret-color: #FEFFFF;
     outline: none;
 }
@@ -592,7 +610,7 @@ div > a{
     border: 2px transparent;
     border-radius: 10px;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 30px;
     caret-color: #FEFFFF;
     outline: none;
 }
@@ -606,7 +624,7 @@ div > a{
     background-color: #1e4b49;
     border: 1.5px solid #1e4b49;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: #FEFFFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -639,4 +657,11 @@ div.skill1-para > span > a{
 }
 div.skill1-para > span > a:hover{
     text-decoration: underline;
+}
+
+#selection-country{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 50px;
 }
