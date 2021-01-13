@@ -17,7 +17,7 @@
         <nav>
             <ul class="flex-container-header">
                 <a href="index.html">
-                    <img src="./assets/g1136.png" alt="img" class="logo">
+                    <img src="D:\Inkscape\g1136.png" alt="img" class="logo">
                 </a>
                 <li><a href="explore.html">Explore</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
@@ -30,7 +30,7 @@
         <h1 class="pricing-headline">Pricing</h1>
     </div>
     <div class="plans-container">
-        <div class="plans">
+        <div class="plans plan-select">
             <h1 class="plan-head">Basic</h1>
             <p class="plan-price">Free</p>
             <p class="plan-content basic-plan-content-margin">Access to All Free Videos</p>
@@ -42,10 +42,11 @@
             <p class="plan-content not-applicable">Free Merch</p>
             <p class="plan-info">Current Plan</p>
         </div>
-        <div class="plans plans-pro">
+        <div class="plans">
             <h1 class="plan-head">Pro</h1>
-            <p class="plan-price">$29/mo</p>
-            <p class="plan-price-cut">$70/mo</p>
+            <p class="plan-price" id="plan-rate">$29/mo</p>
+            <p class="plan-price-cut" id="plan-rate-previous">$70/mo</p>
+            <p class="plan-recommend">(Recommended Plan)</p>
             <p class="plan-content plan-content-margin">Access to All Free Videos</p>
             <p class="plan-content">Additional Learning Resources</p>
             <p class="plan-content">Bonus Content</p>
@@ -59,7 +60,7 @@
             <h1 class="plan-head">Premium</h1>
             <p class="plan-price">$59/mo</p>
             <p class="plan-price-cut">$120/mo</p>
-            <p class="plan-content plan-content-margin">Access to All Free Videos</p>
+            <p class="plan-content plan-content-margin-premium">Access to All Free Videos</p>
             <p class="plan-content">Additional Learning Resources</p>
             <p class="plan-content">Bonus Content</p>
             <p class="plan-content not-applicable">Videos of upto 3 Categories</p>
@@ -69,7 +70,46 @@
             <button class="plan-cta-btn">Get Started</button>
         </div>
     </div>
-    <script src="./js/main.js"></script>
-    <script src="./js/scroll.js"></script>
+    <div id="selection-country">
+        <select id="drop-down-country">
+            <option disabled="disabled" value="selection" selected>Select your country</option>
+            <option value="AUD">AUD</option>
+            <option value="BGN">BGN</option>
+            <option value="CAD">CAD</option>
+            <option value="BRL">BRL</option>
+            <option value="CNY">CNY</option>
+            <option value="CHF">CHF</option>
+            <option value="DKK">DKK</option>
+            <option value="CZK">CZK</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="HRK">HRK</option>
+            <option value="HKD">HKD</option>
+            <option value="IDR">IDR</option>
+            <option value="HUF">HUF</option>
+            <option value="INR">INR</option>
+            <option value="ILS">ILS</option>
+            <option value="JPY">JPY</option>
+            <option value="ISK">ISK</option>
+            <option value="MXN">MXN</option>
+            <option value="KRW">KRW</option>
+            <option value="NOK">NOK</option>
+            <option value="MYR">MYR</option>
+            <option value="PHP">PHP</option>
+            <option value="NZD">NZD</option>
+            <option value="RON">RON</option>
+            <option value="PLN">PLN</option>
+            <option value="SEK">SEK</option>
+            <option value="RUB">RUB</option>
+            <option value="THB">THB</option>
+            <option value="SGD">SGD</option>
+            <option value="USD">USD</option>
+            <option value="TRY">TRY</option>
+            <option value="ZAR">ZAR</option>
+        </select>
+        <!-- <button id="submit">Go</button> -->
+    </div>
+    <script src="./js/pricing.js"></script>
+    <!-- <script src="./js/scroll.js"></script> -->
 </body>
 </html>
