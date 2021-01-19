@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/stylemain.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:Regular|Work+Sans:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:wght@300;500&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul class="flex-container-header">
-                <a href="index.html">
-                    <img src="./assets/g1136.png" alt="img" class="logo">
-                </a>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <!--<li><a href="#">About Us</a></li>-->
-                <li><a href="contact.html">Contact</a></li>
-                <li><button>SIGN UP</button></li>
-            </ul>
+        <nav class="navigation">
+            <!-- <a href="index.html" class="hide">
+                <img src="./assets/g1136.png" alt="img" class="logo">
+            </a> -->
+            <div class="menu">
+                <div class="menu-content">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="flex-container-header menulist">
+                <!-- <a href="index.html">
+                <img src="./assets/g1136.png" alt="img" class="logo">
+                </a> -->
+                <!-- <input type="checkbox" /> -->
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <!--<li><a href="#">About Us</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- <li><button>SIGN UP</button></li> -->
+                </ul>
+                <!-- <li><button>SIGN UP</button></li> -->
+            </div>
+            <!-- <a href="index.html" class="hide">
+                <img src="./assets/g1136.png" alt="img" class="logo">
+            </a> -->
+            <li class="sign-up-list">
+                <button>SIGN UP</button>
+            </li>
+            <!-- <span class="material-icons">menu</span> -->
         </nav>
     </header>
-    <div>
+    <div class="headline-main-contain">
         <div class="headline-container">
             <h1 data-scroll class="headline">Want To Learn A New</h1>
             <h1 data-scroll class="headline headline-white">Skill?</h1>
-            <p class="para-below-headline">We have just what you want. SkillDome<sup>&trade;</sup>offers free as well as paid online courses in different fields from creators all over the world.</p>
-            <button class="btn-headline" id="cta-btn-1">Learn more</button>
+            <p class="para-below-headline rwd-headline-para">We have just what you want.
+                SkillDome<sup>&trade;</sup>offers free as well as paid online courses in different fields from creators
+                all over the world.</p>
+            <button class="btn-headline btn-headline-rwd" id="cta-btn-1">Learn more</button>
         </div>
     </div>
     <div class="skillcontainer1" id="different-skills">
         <div class="skill1-para">
             <p data-scroll class="skill1">User Experience Design</p>
             <p data-scroll class="skill-description-on-main-page">
-                UX Design enhances the experience and interaction of a user using a product. Here, you will explore a wide range of courses ranging from beginners level to professional level by some of the best creators and designers in the world.
+                UX Design enhances the experience and interaction of a user using a product. Here, you will explore a
+                wide range of courses ranging from beginners level to professional level by some of the best creators
+                and designers in the world.
             </p>
             <span>
                 <a href="explore.html">Explore</a>
@@ -53,7 +80,8 @@
         <div class="skill1-para">
             <p data-scroll class="skill1">Graphic Designing</p>
             <p data-scroll class="skill-description-on-main-page">
-                These courses will offer you the principles and techniques of Graphic Design. Typography, color theory, layout are some of the key areas which you will be exploring through these courses.
+                These courses will offer you the principles and techniques of Graphic Design. Typography, color theory,
+                layout are some of the key areas which you will be exploring through these courses.
             </p>
             <span>
                 <a href="explore.html">Explore</a>
@@ -67,7 +95,9 @@
         <div class="skill1-para">
             <p data-scroll class="skill1">Video Editing</p>
             <p data-scroll class="skill-description-on-main-page">
-                Video is one of the most popular way of communication. Editing a video can be a little bit complex but here you will learn how to edit videos effectively and in a minimalistic yet attractive way. Get Started to edit videos like a pro.
+                Video is one of the most popular way of communication. Editing a video can be a little bit complex but
+                here you will learn how to edit videos effectively and in a minimalistic yet attractive way. Get Started
+                to edit videos like a pro.
             </p>
             <span>
                 <a href="explore.html">Explore</a>
@@ -78,11 +108,14 @@
         </div>
     </div>
     <div class="get-started">
-        <h1 class="get-started-text color-diff">Get Started<!--<br>For <u>Free</u>--></h1>
+        <h1 class="get-started-text color-diff">Get Started
+            <!--<br>For <u>Free</u>-->
+        </h1>
         <h1 class="get-started-text">for free!</h1>
         <button class="sign-up-cta">Sign Up</button>
         <p class="if-existing-account">Already have an account? <a href="">Log in</a></p>
     </div>
+    <script src="./js/navigation.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/scroll.js"></script>
     <!--<script>
@@ -96,4 +129,5 @@
         });
     </script>-->
 </body>
+
 </html>
