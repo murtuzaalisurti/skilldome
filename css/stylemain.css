@@ -13,7 +13,8 @@ body{
 .flex-container-header{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 .logo{
     align-items: center;
@@ -23,9 +24,14 @@ body{
     /*height: 61.876px;
     width: 177.958px;
     /*border: 2px solid #17252A;*/
-    margin-right: 405px;
+    /* margin-right: 100px; */
     height: 40.706px;
     width: 241.555px;
+}
+.navigation{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 nav ul{
     margin: 7px 10px 0px 10px;
@@ -34,14 +40,19 @@ nav ul{
     list-style-type: none;
     background-color: transparent;
 }
+nav ul li{
+    width: 20%;
+}
 nav ul li a{
     display: block;
-    padding: 20px 15px;
+    padding: 25px 15px;
     text-decoration: none;
+    /* width: 100%; */
     color: #17252A;
     /*font-weight: bold;*/
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
 }
 nav ul li a:hover{
     background-color: #17252A;
@@ -315,6 +326,7 @@ p.if-existing-account > a{
     opacity: 0;
     transform: translateY(50px) rotateZ(-5deg);
 }
+
 .searchbox-container{
     display: flex;
     flex-flow: row wrap;
@@ -664,4 +676,416 @@ div.skill1-para > span > a:hover{
     flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 50px;
+}
+/* nav span.material-icons{
+    display: none;
+} */
+/* .menu{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.menu input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+.menu span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.menu span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+.menu span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ 
+.menu input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ 
+.menu input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ 
+.menu input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ 
+.menulist
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari 
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.menu input:checked ~ ul
+{
+  transform: none;
+} */
+.navigation{
+    background-color: #3AAFA9;
+}
+
+.flex-container-header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    height: 70px;
+    width: 70px;
+    position: relative;
+}
+.line {
+    width: 33px;
+    height: 4px;
+    background: white;
+    border-radius: 3px;
+    /* margin: 5px; */
+    margin-bottom: 5px;
+    transition: all 0.5s;
+  }
+  .menu-content div:nth-child(1){
+    transform-origin: 0% 0%;
+    transition: all 0.5s;
+}
+.menu-content div:nth-child(3){
+    transform-origin: 0% 100%;
+    /* width: 35px; */
+    transition: all 0.5s;
+}
+  .menu-content {
+    position: absolute;
+    /* position: fixed; */
+    margin: 0;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    /* transform: translate(-5%, -50%); */
+    transform-origin: 0px 0px;
+    /* transform: rotate(0deg); */
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+    z-index: 2;
+  }
+.position-fixed{
+    position: fixed;
+    top: 6.4%;
+    left: 3%;
+    width: 45px;
+}
+.menulist{
+    margin: 0;
+    position: fixed;
+    /* background-color: #3AAFA9; */
+    background-color: #3aafa936;
+    /* -webkit-backdrop-filter: blur; */
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    clip-path: circle(20px at 1% 0%);
+    -webkit-clip-path: circle(20px at 1% -7%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+}
+nav ul li{
+    width: 20%;
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .menulist {
+      -webkit-backdrop-filter: blur(15px);
+      backdrop-filter: blur(15px);
+      background-color: #8ee9e59f;  
+    }
+    /* .warning {
+      display: none;
+    } */
+  }
+.menulist.open{
+    clip-path: circle(2160px at 90% -10%);
+    -webkit-clip-path: circle(2160px at 90% -10%);
+    pointer-events: all;
+}
+
+.cross{
+    opacity: 1;
+    background-color: #17252A;
+    transform: rotate(45deg) translate(-2.7px, -1px);
+    transition: all 0.5s;
+}
+.cross-opp{
+    opacity: 1;
+    transform: rotate(-45deg) translate(-2.2px, -1px);
+    transition: all 0.5s;
+}
+.gone{
+    opacity: 0;
+    transform: rotate(0deg);
+    /* height: 0;
+    width: 0;
+    display: none; */
+    transition: all 0.5s;
+    /* transform: rotate(0deg) scale(0.2, 0.2); */
+}
+.landing {
+    flex-direction: column;
+  }
+  .menulist li {
+    opacity: 0;
+  }
+  /* .nav-links li a {
+    font-size: 25px;
+  } */
+  .menulist li:nth-child(1) {
+    transition: all 0.2s ease 0.1s;
+  }
+  .menulist li:nth-child(2) {
+    transition: all 0.2s ease 0.2s;
+  }
+  .menulist li:nth-child(3) {
+    transition: all 0.2s ease 0.3s;
+  }
+  .menulist li.fade {
+    opacity: 1;
+  }
+.sign-up-list{
+    list-style-type: none;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+@media screen and (max-width:370px){
+    /* nav span.material-icons{
+        display: block;
+    } */
+    /* .flex-container-header{
+        position: fixed;
+    } */
+    .hide{
+        display: none;
+    }
+    .headline-main-contain{
+        height: 360px;
+        width: 360px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .headline-container{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        box-sizing: border-box;
+        /* padding-left: 20px; */
+        /* margin: auto; */
+        margin-top: 55px;
+        /*border: 3px solid #17252A;*/
+    }
+    .position-fixed{
+        position: fixed;
+        top: 6%;
+        left: 10%;
+        width: 45px;
+    }
+    nav ul li{
+        width: 80%;
+    }
+    nav ul li a{
+        display: block;
+        padding: 25px 15px;
+        text-decoration: none;
+        /* width: 100%; */
+        color: #17252A;
+        /*font-weight: bold;*/
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+    }
+    .menulist{
+        margin: 0;
+        position: fixed;
+        /* background-color: #3AAFA9; */
+        background-color: #3aafa936;
+        /* -webkit-backdrop-filter: blur; */
+        z-index: 1;
+        height: 640px;
+        width: 360px;
+        display: flex;
+        flex-flow: column;
+        clip-path: circle(10px at 1% 0%);
+        -webkit-clip-path: circle(10px at 1% -7%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .menulist.open{
+        clip-path: circle(670px at 90% 20%);
+        -webkit-clip-path: circle(670px at 90% 20%);
+        pointer-events: all;
+    }
+
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        .menulist {
+          -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+          background-color: #7eebe5c9;  
+        }
+        /* .warning {
+          display: none;
+        } */
+      }
+    .cross{
+        opacity: 1;
+        background-color: #17252A;
+        transform: rotate(45deg) translate(-3px, -1px);
+        transition: all 0.5s;
+    }
+    .cross-opp{
+        opacity: 1;
+        transform: rotate(-45deg) translate(-2.2px, -1px);
+        transition: all 0.5s;
+    }
+    .gone{
+        opacity: 0;
+        transform: rotate(0deg);
+        /* height: 0;
+        width: 0;
+        display: none; */
+        transition: all 0.5s;
+        /* transform: rotate(0deg) scale(0.2, 0.2); */
+    }
+    .headline{
+        font-size: 38px;
+        width: 300px;
+        text-align: center;
+    }
+    .headline-container{
+        padding-left: 0;
+        /* margin: 65px; */
+        /* margin: 32px; */
+    }
+    .para-below-headline{
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .rwd-headline-para{
+        width: 300px;
+    }
+    .btn-headline-rwd{
+        width: 100px;
+    }
+    .btn-headline{
+        background-color: #389491;
+        color: #17252A;
+        font-weight: 300;
+        margin-top: 30px;
+        /* margin-left: 98px; */
+        /* margin-right: 50px; */
+        font-size: 12px;
+        border: transparent;
+        border-radius: 5px;
+        padding: 10px 5px;
+    }
+    .skillcontainer1, .skillcontainer2, .skillcontainer3{
+        height: 480px;
+    }
+    .get-started{
+        height: 640px;
+    }
+    .skill1{
+        font-size: 40px;
+    }
+    .skill1-para{
+        width: 320px;
+        margin-left: 40px;
+    }
+    .skill-description-on-main-page{
+        /* text-align: center; */
+        font-size: 12px;
+        line-height: 18px;
+    }
+    div.skill1-para > span > a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: #FEFFFF;
+        margin-top: 30px;
+        text-decoration: none;
+    }
+    .get-started-text{
+        align-self: center;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        color: #FEFFFF;
+    }
+    .color-diff{
+        color: #17252A;
+    }
 }
