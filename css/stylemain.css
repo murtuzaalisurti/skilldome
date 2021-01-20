@@ -917,7 +917,7 @@ nav ul li{
     margin-top: 15px;
     margin-right: 15px;
 }
-@media screen and (max-width:370px){
+@media (max-width:370px){
     /* nav span.material-icons{
         display: block;
     } */
