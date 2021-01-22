@@ -944,7 +944,7 @@ nav ul li{
     /* .flex-container-header{
         position: fixed;
     } */
-    *{ overflow-x: hidden; }
+    *{ overflow-x: hidden !important; }
     .hide{
         display: none;
     }
@@ -1044,8 +1044,8 @@ nav ul li{
         width: 19rem;
     }
     .headline{
-        font-size: 38px;
-        width: 300px;
+        font-size: 34px;
+        width: 320px;
         text-align: center;
     }
     .headline-container{
