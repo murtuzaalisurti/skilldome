@@ -944,6 +944,7 @@ nav ul li{
     /* .flex-container-header{
         position: fixed;
     } */
+    *{ overflow-x: hidden; }
     .hide{
         display: none;
     }
