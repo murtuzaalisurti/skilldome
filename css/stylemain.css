@@ -81,7 +81,7 @@ and for a negative value it will be on the left side*/
 /* vertical offset means for a positive value the shadow will be on the bottom
 and for a negative value it will be slightly up*/
 nav li button:hover{
-    box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0.5rem 0.5rem 0.8rem 0rem rgba(0, 0, 0, 0.2);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     transition: all 0.3s;
@@ -337,18 +337,19 @@ p.if-existing-account > a{
 .searchbox{
     border: 2px transparent;
     border-radius: 10px;
-    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 1em 1em 2em 0px rgba(0, 0, 0, 0.2);
     padding: 15px 20px;
     width: 30rem;
     outline: none;
-    background-color: #FEFFFF;
+    /* background-color: #FEFFFF;
     background-color: #17252A;
-    background-color: #2f9792;
+    background-color: #2f9792; */
+    background-color: #277c78;
     /* background-color: #277c78; */
     color: #FEFFFF;
 }
 .searchbox:hover{
-    background-color: #277c78;
+    background-color: #266966;
     transition: all 0.3s;
 }
 ::placeholder{
@@ -401,6 +402,10 @@ p.if-existing-account > a{
     display: flex;
     flex-flow: column wrap;
 }
+/* .content-click{
+    background: linear-gradient(-45deg, #3aafa993, rgba(0, 0, 0, 0.267));
+    transition: all 0.5s;
+} */
 .content:hover{
     height: 301px;
     width: 211px;
@@ -869,7 +874,7 @@ div.skill1-para > span > a:hover{
     flex-flow: column;
     clip-path: circle(20px at 1% 0%);
     -webkit-clip-path: circle(20px at 1% -7%);
-    transition: all 1s ease-out;
+    transition: all 0.7s ease-out;
     pointer-events: none;
 }
 nav ul li{
@@ -921,13 +926,16 @@ nav ul li{
     font-size: 25px;
   } */
   .menulist li:nth-child(1) {
-    transition: all 0.2s ease 0.1s;
+    transition: all 0.2s ease 0.05s;
   }
   .menulist li:nth-child(2) {
-    transition: all 0.2s ease 0.2s;
+    transition: all 0.2s ease 0.1s;
   }
   .menulist li:nth-child(3) {
-    transition: all 0.2s ease 0.3s;
+    transition: all 0.2s ease 0.15s;
+  }
+  .menulist li:nth-child(4) {
+      transition: all 0.2s ease 0.2s;
   }
   .menulist li.fade {
     opacity: 1;
@@ -944,12 +952,20 @@ nav ul li{
     /* .flex-container-header{
         position: fixed;
     } */
-    *{ overflow-x: hidden !important; }
+    *{
+        overflow-x: hidden;
+    }
+    header{
+        overflow-x: visible;
+    }
+    .navigation{
+        overflow-x: visible;
+    }
     .hide{
         display: none;
     }
     .headline-main-contain{
-        height: 22.5rem;
+        height: 22.5rem !important;
         /* width: 22.5rem; */
         display: flex;
         flex-flow: column;
@@ -973,6 +989,7 @@ nav ul li{
         top: 6%;
         left: 10%;
         width: 45px;
+        overflow-x: visible;
     }
     nav ul li{
         width: 80%;
@@ -1001,7 +1018,7 @@ nav ul li{
         flex-flow: column;
         clip-path: circle(10px at 1% 0%);
         -webkit-clip-path: circle(10px at 1% -7%);
-        transition: all 1s ease-out;
+        transition: all 0.7s ease-out;
         pointer-events: none;
     }
     .menulist.open{
@@ -1020,16 +1037,24 @@ nav ul li{
           display: none;
         } */
       }
+    .menu-content{
+        overflow-x: visible;
+    }
+    .line{
+        overflow-x: visible;
+    }
     .cross{
         opacity: 1;
         background-color: #17252A;
         transform: rotate(45deg) translate(-3px, -1px);
         transition: all 0.5s;
+        overflow-x: visible;
     }
     .cross-opp{
         opacity: 1;
         transform: rotate(-45deg) translate(-2.2px, -1px);
         transition: all 0.5s;
+        overflow-x: visible;
     }
     .gone{
         opacity: 0;
@@ -1043,13 +1068,18 @@ nav ul li{
     .searchbox{
         width: 19rem;
     }
+    .skill1-para{
+        overflow-x: visible;
+    }
     .headline{
         font-size: 38px;
         width: 300px;
         text-align: center;
+        overflow-x: visible;
     }
     .headline-container{
         padding-left: 0;
+        overflow-x: visible;
         /* margin: 65px; */
         /* margin: 32px; */
     }
@@ -1111,6 +1141,7 @@ nav ul li{
     }
     .explore-content{
         height: 100%;
+        overflow-x: visible;
         /* background-color: #296865; */
         /* margin-bottom: 3rem; */
         display: flex;
@@ -1119,6 +1150,7 @@ nav ul li{
     }
     .explore-content-slide{
         height: 100%;
+        overflow-x: visible;
         /* background-color: #296865; */
         margin-bottom: 3rem;
         display: flex;
@@ -1144,6 +1176,15 @@ nav ul li{
         display: flex;
         flex-flow: column wrap;
     }
+    .searchbox{
+        overflow-x: visible;
+    }
+    .searchbox-container{
+        overflow-x: visible;
+    }
+    .sign-up-list{
+        overflow-x: visible;
+    }
     .explore-section-1{
         display: flex;
         flex-flow: column wrap;
@@ -1161,6 +1202,7 @@ nav ul li{
     }
     .plans-container{
         height: 100%;
+        overflow-x: visible;
         /* background-color: #296865; */
         margin: 3rem 0rem;
         display: flex;
@@ -1184,8 +1226,9 @@ nav ul li{
     }
     .form-div{
         /* width: 50%; */
-        margin-top: 70px;
-        margin-bottom: 70px;
+        margin-top: 2.8rem;
+        margin-bottom: 4rem;
+        overflow-x: visible;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -1300,4 +1343,5 @@ nav ul li{
     .font{
         font-size: 2.5rem;
     }
+
 }
